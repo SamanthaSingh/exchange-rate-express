@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate</title>
+</head>
+<body>
+    <main>
+        <h1>Calling API using Express</h1>
+        <h2>Exchange Rate</h2>
+        <div>
+            <h4>Latest Exchange Rate</h4>
+            <p>http://localhost:5000/latest</p>
+        </div>
+        <div>
+            <h4>Exchange Rate on Date(YYYY-MM-DD)</h4>
+            <p>http://localhost:5000/:date</p>
+        </div>
+        <div>
+            <h4>Exchange Rate at Base currency(e.g. AUD)</h4>
+            <p>http://localhost:5000/base/:base</p>
+        </div>
+        <div>
+            <h4>Exchange Rate of selected currency against base currency</h4>
+            <p>http://localhost:5000/latest/symbols/:symbols</p>
+        </div>
+        <div>
+            <h4>Exchange Rate between dates</h4>
+            <p>http://localhost:5000/history/startdate/:sdate/enddate/:edate</p>
+        </div>
+        <div>
+            <h4>Exchange Rate of selected currency against base currency between dates</h4>
+            <p>http://localhost:5000/history/startdate/:sdate/enddate/:edate/symbols/:symbols</p>
+        </div>
+        <div>
+            <h4>Exchange Rate of base currency between dates</h4>
+            <p>http://localhost:5000/history/startdate/:sdate/enddate/:edate/base/:base</p>
+        </div>
+    </main>
+</body>
+</html>
